@@ -108,13 +108,22 @@ html{
 .sidebar{
     float: left;
     width: 20%;
+    margin-top: 2.5rem;
 }
 
+.articles-image{
+    height: 10rem;
+    width: 100%;
+    object-fit:cover;
+    filter: brightness(80%);
+    border-radius: 1rem;
+}
 .central{
     float: left;
     width: calc(60% - 1rem);
     margin-left: .5rem;
     margin-right: .5rem;
+    margin-top: 2.5rem;
 }
 
 .site-footer{
