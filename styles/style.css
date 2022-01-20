@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 /* FINAL */
 
 html{
@@ -23,14 +24,14 @@ html{
 }
 
 .logo{
-    width: 6rem;
+    width: 8rem;
     padding-right: .5rem;
     border-right: .05rem solid #e8e8e8;
 }
 
 .navigation-bar{
     margin: 1rem 0;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 .menu-element{
@@ -54,8 +55,9 @@ html{
 }
 
 .main-banner{
+    position: relative;
     background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../img/banner.jpg);
     width: 100%;
     height: 29rem;
@@ -64,21 +66,44 @@ html{
     color: white;
 }
 
+.banner-text{
+    position: absolute;
+    bottom: 2rem;
+}
 .banner-title{
-    position: relative;
-    top: 20rem;
     font-size: 1.5rem;
     margin-left: 2rem;
     width: 50%;
-    font-weight: 100;
+    font-weight: 400;
+    /* codice per puntini di sospensione oltre 2 righe */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .banner-info{
-    position: relative;
-    top: 20rem;
     font-size: 1rem;
     margin-left: 2rem;
     width: 50%;
-    font-weight: 100;
+    font-weight: 300;
+    /* codice per puntini di sospensione oltre 2 righe */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main-header-title{
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.main-header-subtitle{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #a9a9a9;
 }
 .sidebar{
     float: left;
